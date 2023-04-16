@@ -1,0 +1,138 @@
+<h2 id="crossreference" class="list">Cross-reference for The Digicites Ontolology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Digicites Ontolology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#urn:absolute:GeospatialCell"
+            title="urn:absolute:www.digicities.info/ontology/GeospatialCell">
+            <span>geospatial cell</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="urn:absolute:GeospatialCell">
+      <h3>geospatial cell<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> urn:absolute:www.digicities.info/ontology/GeospatialCell</p>
+      <div class="comment">
+         <span class="markdown">A discrete area defined by its geographic coordinates and represents a discrete unit of geographic data</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#urn:absolute:hasH3Resolution"
+               title="urn:absolute:www.digicities.info/ontology/hasH3Resolution">has h3 resolution</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#urn:absolute:H3Cell" title="urn:absolute:www.digicities.info/ontology/H3Cell">h3 cell</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#urn:absolute:hasH3Resolution"
+            title="urn:absolute:www.digicities.info/ontology/hasH3Resolution">
+            <span>has h3 resolution</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="urn:absolute:hasH3Resolution">
+      <h3>has h3 resolution<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> urn:absolute:www.digicities.info/ontology/hasH3Resolution</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#urn:absolute:GeospatialCell"
+                  title="urn:absolute:www.digicities.info/ontology/GeospatialCell">geospatial cell</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="urn:absolute:www.digicities.info/ontology/GeospatialCellResolution"
+                  target="_blank"
+                  title="urn:absolute:www.digicities.info/ontology/GeospatialCellResolution">geospatial cell resolution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#urn:absolute:H3Cell" title="urn:absolute:www.digicities.info/ontology/H3Cell">
+            <span>h3 cell</span>
+         </a>
+      </li>
+      <li>
+         <a href="#urn:absolute:H3Index10"
+            title="urn:absolute:www.digicities.info/ontology/H3Index10">
+            <span>h3 index10</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="urn:absolute:H3Cell">
+      <h3>h3 cell<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> urn:absolute:www.digicities.info/ontology/H3Cell</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#urn:absolute:GeospatialCell"
+               title="urn:absolute:www.digicities.info/ontology/GeospatialCell">geospatial cell</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="urn:absolute:H3Index10">
+      <h3>h3 index10<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> urn:absolute:www.digicities.info/ontology/H3Index10</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="urn:absolute:www.digicities.info/ontology/GeospatialCellResolution"
+               target="_blank"
+               title="urn:absolute:www.digicities.info/ontology/GeospatialCellResolution">geospatial cell resolution</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="http://www.w3.org/2002/07/owl#hasValue"
+               target="_blank"
+               title="http://www.w3.org/2002/07/owl#hasValue">has value</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"10"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

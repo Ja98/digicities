@@ -1,0 +1,131 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd", "urn:absolute:www.digicities.info/ontology/", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "urn:absolute:www.digicities.info/ontology", "http://www.w3.org/2001/XMLSchema", "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html" ],
+    "title" : {
+      "en" : "The Digicites Ontolology"
+    },
+    "iri" : "urn:absolute:www.digicities.info/ontology/",
+    "author" : [ "James Allan" ],
+    "description" : {
+      "en" : "The Digicities Ontology supports the integration and querying of hierarchical semantic data layers for cities"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "James Allan",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "dici",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "www.digicities.info/ontology/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Digicites Ontolology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "urn:absolute:www.digicities.info/ontology/GeospatialCell",
+    "baseIri" : "urn:absolute:www.digicities.info/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeospatialCell"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.digicities.info/ontology/H3Cell",
+      "baseIri" : "urn:absolute:www.digicities.info/ontology",
+      "labels" : {
+        "IRI-based" : "H3Cell"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A discrete area defined by its geographic coordinates and represents a discrete unit of geographic data"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "urn:absolute:www.digicities.info/ontology/GeospatialCellResolution",
+    "baseIri" : "urn:absolute:www.digicities.info/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeospatialCellResolution"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.digicities.info/ontology/H3Index10",
+      "baseIri" : "urn:absolute:www.digicities.info/ontology",
+      "labels" : {
+        "IRI-based" : "H3Index10"
+      }
+    } ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "urn:absolute:www.digicities.info/ontology/hasH3Resolution",
+    "baseIri" : "urn:absolute:www.digicities.info/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasH3Resolution"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#hasValue",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "3"
+  } ]
+}

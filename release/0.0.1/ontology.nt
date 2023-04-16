@@ -1,0 +1,131 @@
+<urn:absolute:www.digicities.info/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:absolute:www.digicities.info/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://ja98.github.io/digicities/digicities_ontology/development/0.1/digicities.ttl> .
+<urn:absolute:www.digicities.info/ontology/> <http://purl.org/dc/terms/creator> "James Allan" .
+<urn:absolute:www.digicities.info/ontology/> <http://purl.org/dc/terms/description> "The Digicities Ontology supports the integration and querying of hierarchical semantic data layers for cities"@en .
+<urn:absolute:www.digicities.info/ontology/> <http://purl.org/dc/terms/title> "The Digicites Ontolology"@en .
+<urn:absolute:www.digicities.info/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dici" .
+<urn:absolute:www.digicities.info/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> "www.digicities.info/ontology/" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis
+<http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the vertices that make up a building surface." .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum
+<https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> <http://www.w3.org/2000/01/rdf-schema#comment> "a string following the unified code for units of measure" .
+# 
+# urn:absolute:www.digicities.info/ontology/#absoluteTimeSeries
+<urn:absolute:www.digicities.info/ontology/#absoluteTimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:absolute:www.digicities.info/ontology/#absoluteTimeSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A time series with absolute values at each timestep" .
+# 
+# urn:absolute:www.digicities.info/ontology/#crs
+<urn:absolute:www.digicities.info/ontology/#crs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:absolute:www.digicities.info/ontology/#crs> <http://www.w3.org/2000/01/rdf-schema#comment> "the coordinate system used to define a geometry" .
+# 
+# urn:absolute:www.digicities.info/ontology/#relativeTimeSeries
+<urn:absolute:www.digicities.info/ontology/#relativeTimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:absolute:www.digicities.info/ontology/#relativeTimeSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A time series of relative values that, when multiplied by a base value, gives the absolute value for each timestep" .
+# 
+# urn:absolute:www.digicities.info/ontology/#yearRange
+<urn:absolute:www.digicities.info/ontology/#yearRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:absolute:www.digicities.info/ontology/#yearRange> <http://www.w3.org/2000/01/rdf-schema#comment> "A range of years, format: YYYY-YYYY" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# urn:absolute:www.digicities.info/ontology/hasH3Resolution
+<urn:absolute:www.digicities.info/ontology/hasH3Resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<urn:absolute:www.digicities.info/ontology/hasH3Resolution> <http://www.w3.org/2000/01/rdf-schema#domain> <urn:absolute:www.digicities.info/ontology/GeospatialCell> .
+<urn:absolute:www.digicities.info/ontology/hasH3Resolution> <http://www.w3.org/2000/01/rdf-schema#range> <urn:absolute:www.digicities.info/ontology/GeospatialCellResolution> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#hasValue
+<http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# urn:absolute:www.digicities.info/ontology/GeospatialCell
+<urn:absolute:www.digicities.info/ontology/GeospatialCell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<urn:absolute:www.digicities.info/ontology/GeospatialCell> <http://www.w3.org/2000/01/rdf-schema#comment> "A discrete area defined by its geographic coordinates and represents a discrete unit of geographic data" .
+# 
+# urn:absolute:www.digicities.info/ontology/GeospatialCellResolution
+<urn:absolute:www.digicities.info/ontology/GeospatialCellResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# urn:absolute:www.digicities.info/ontology/H3Cell
+<urn:absolute:www.digicities.info/ontology/H3Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<urn:absolute:www.digicities.info/ontology/H3Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:absolute:www.digicities.info/ontology/GeospatialCell> .
+# 
+# urn:absolute:www.digicities.info/ontology/H3Index10
+<urn:absolute:www.digicities.info/ontology/H3Index10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<urn:absolute:www.digicities.info/ontology/H3Index10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:absolute:www.digicities.info/ontology/GeospatialCellResolution> .
+<urn:absolute:www.digicities.info/ontology/H3Index10> <http://www.w3.org/2002/07/owl#hasValue> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
