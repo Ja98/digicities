@@ -1,2 +1,2 @@
 # digicities ontology
-Tools developed during the Digicities project
+Ontology for the Digicities project 
