@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://ja98.github.io/digicities_ontology/"
+     xml:base="https://ja98.github.io/digicities_ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://ja98.github.io/digicities_ontology/">
+        <owl:versionIRI rdf:resource="https://ja98.github.io/digicities_ontology/relaease/0.0.2/ontology.ttl"/>
+        <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql/1.1"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <terms:creator>James Allan</terms:creator>
+        <terms:description xml:lang="en">The Digicities Ontology supports the integration and querying of hierarchical semantic data layers for cities</terms:description>
+        <terms:title xml:lang="en">The Digicities Ontolology</terms:title>
+        <vann:preferredNamespacePrefix>dici</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://ja98.github.io/digicities_ontology/</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis -->
+
+
+    <rdfs:Datatype rdf:about="http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis">
+        <rdfs:comment>Defines the vertices that make up a building surface.</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum -->
+
+
+    <rdfs:Datatype rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum">
+        <rdfs:comment>a string following the unified code for units of measure</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://ja98.github.io/digicities_ontology/#absoluteTimeSeries -->
+
+
+    <rdfs:Datatype rdf:about="https://ja98.github.io/digicities_ontology/#absoluteTimeSeries">
+        <rdfs:comment>A time series with absolute values at each timestep</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://ja98.github.io/digicities_ontology/#crs -->
+
+
+    <rdfs:Datatype rdf:about="https://ja98.github.io/digicities_ontology/#crs">
+        <rdfs:comment>the coordinate system used to define a geometry</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://ja98.github.io/digicities_ontology/#relativeTimeSeries -->
+
+
+    <rdfs:Datatype rdf:about="https://ja98.github.io/digicities_ontology/#relativeTimeSeries">
+        <rdfs:comment>A time series of relative values that, when multiplied by a base value, gives the absolute value for each timestep</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://ja98.github.io/digicities_ontology/#yearRange -->
+
+
+    <rdfs:Datatype rdf:about="https://ja98.github.io/digicities_ontology/#yearRange">
+        <rdfs:comment>A range of years, format: YYYY-YYYY</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/hasH3Resolution -->
+
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.digicities.info/ontology/hasH3Resolution">
+        <rdfs:domain rdf:resource="urn:absolute:www.digicities.info/ontology/GeospatialCell"/>
+        <rdfs:range rdf:resource="urn:absolute:www.digicities.info/ontology/GeospatialCellResolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <owl:equivalentClass rdf:resource="urn:absolute:www.digicities.info/ontology/GeospatialCell"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/GeospatialCell -->
+
+
+    <owl:Class rdf:about="urn:absolute:www.digicities.info/ontology/GeospatialCell">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.digicities.info/ontology/VirtualEntity"/>
+        <rdfs:comment>A discrete area defined by its geographic coordinates and represents a discrete unit of geographic data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/GeospatialCellResolution -->
+
+
+    <owl:Class rdf:about="urn:absolute:www.digicities.info/ontology/GeospatialCellResolution"/>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/PhysicalBuildingRecord -->
+
+
+    <owl:Class rdf:about="urn:absolute:www.digicities.info/ontology/PhysicalBuildingRecord">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.digicities.info/ontology/PhysicalRecord"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/PhysicalRecord -->
+
+
+    <owl:Class rdf:about="urn:absolute:www.digicities.info/ontology/PhysicalRecord">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/UnknownValue -->
+
+
+    <owl:Class rdf:about="urn:absolute:www.digicities.info/ontology/UnknownValue"/>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/VirtualBuilding -->
+
+
+    <owl:Class rdf:about="urn:absolute:www.digicities.info/ontology/VirtualBuilding">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.digicities.info/ontology/VirtualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/VirtualEntity -->
+
+
+    <owl:Class rdf:about="urn:absolute:www.digicities.info/ontology/VirtualEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/H3Cell -->
+
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.digicities.info/ontology/H3Cell">
+        <rdf:type rdf:resource="urn:absolute:www.digicities.info/ontology/GeospatialCell"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.digicities.info/ontology/H3Index10 -->
+
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.digicities.info/ontology/H3Index10">
+        <rdf:type rdf:resource="urn:absolute:www.digicities.info/ontology/GeospatialCellResolution"/>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
